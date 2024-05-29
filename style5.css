@@ -1,0 +1,108 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+}
+
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 1rem 0;
+    text-align: center;
+}
+main {
+    padding: 2rem;
+}
+
+.intro {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.services {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+}
+
+.service {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 1.5rem;
+    width: calc(33% - 2rem);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.service h3 {
+    margin-top: 0;
+}
+
+.quiz-button {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    background-color: #4CAF50;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.quiz-button:hover {
+    background-color: #45a049;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem 0;
+    background-color: #4CAF50;
+    color: white;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+}
+
+.conselling-btn{
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    background-color: #4CAF50;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.conselling-btn:hover {
+    background-color: #45a049;
+}
+
+.therapy-btn{
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    background-color: #4CAF50;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.therapy-btn:hover{
+    background-color: #45a049;
+}
+
+.workshop-btn{
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    background-color: #4CAF50;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.workshop-btn:hover{
+    background-color: #45a049;
+}
+

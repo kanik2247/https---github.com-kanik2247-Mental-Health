@@ -1,0 +1,268 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+body{
+    background:rgb(59, 79, 75);
+    color: #f8f8f8;
+}
+
+header{
+    background-color:rgb(156, 210, 156);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+    font-family: Nunito;
+}
+
+.text_logo{
+    font-size: 45px;
+    font-family: Nerko One;
+    margin-left:-750px;
+    margin-bottom: 30px;
+    color: black;
+}
+.navigation li{
+    display: inline-block;
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+.navigation li a{
+    font-size: 20px;
+}
+
+.navigation li:hover a{
+    color: red;
+}
+
+.toggle_btn{
+    display: none;
+    background: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.id{
+    height:100px;
+    width:100px;
+    margin:0;
+    padding:0;
+}
+img{
+    height: 70%;
+    margin-top:70px;
+}
+
+article{
+    display: grid;
+    grid-template-columns: 30% 40% 30%;
+    margin-top: 50px;
+}
+.show_box{
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.show_title{
+    display: inline;
+    font-family: Nerko One ;
+    font-size: 50px;
+    width: 100px;
+    padding: 40px 20px;
+    margin:20px 30px;
+    align-items: center;
+    font-weight: 100;
+    color: rgb(236, 182, 115);
+    text-align: center;
+}
+ 
+p{
+    font-family: Nunito Semibold;
+    padding: 20px 15px;
+    margin: auto;
+    max-width: 4000px;
+    margin-bottom:20px;
+    font-size: 25px;
+}
+.actions{
+    margin: 30px 0;
+    font-family: Nunito;
+    font-size: 25px;
+    text-align: bottom;
+}
+
+.contact{
+    background-color: green;
+    padding: 15px 10px;
+    margin: 20px 20px;
+}
+
+
+.contact:hover {
+    background-color: rgb(70, 200, 70);  
+}
+
+.read_more:hover{
+    color: yellow;
+}
+
+[class*="fa"] {
+    color: #fff;
+    margin-left: 10px;
+}
+    
+
+[class*="fa"]:hover { 
+    color: yellow;
+}
+
+@media screen and (max-width:660px) {
+   .show_box{
+    justify-content: space-between;
+    height: 60vh;
+   } 
+}
+
+@media screen and(max-width: 960px){
+    header{
+        flex-direction: row reverse;
+    }
+    main{
+        background: url("static/1.jpg");
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+    .text_logo{
+        font-size: 40px;
+        font-weight: 600;
+    }
+
+    .navigation{
+        position: absolute;
+        top:80px;
+        left:50%;
+        transform: translateX(30%);
+        justify-content: center;
+        z-index: 30;
+        display: none;
+    }
+    img{
+        display: grid;
+    }
+    .navigation.active{
+        display: grid;
+    }
+
+    .navigation li{
+        margin: 20px 0;
+        background: black;
+        padding: 10px 100px;
+        text-align: center;
+        opacity: 0;
+        animation: opac 0.5s forwards;
+    }
+    
+    .navigation li:nth-of-type(1){
+        animation-delay: 125ms;
+    }
+
+    .navigation li:nth-of-type(2){
+        animation-delay: 250ms;
+    }
+
+    .navigation li:nth-of-type(3){
+        animation-delay: 375ms;
+    }
+
+    .navigation li:nth-of-type(4){
+        animation-delay: 500ms;
+    }
+    
+    .toggle_btn{
+        display: grid;
+    }
+
+    article{
+       grid-template-columns: 100%;
+}
+
+.show_box{
+    justify-content: space-between;
+    width: 80%;
+    text-align: auto;
+}
+
+.show_title{
+    font-size: 60px;
+    width:100%;
+    text-align: center;
+}
+h3{
+    font-size: 30px;
+}
+}
+
+@keyframes opac{
+    25%{
+        opacity: 0.25;
+    }
+    5%{
+        opacity: 0.5;
+    }
+    75%{
+        opacity: 0.75;
+    }
+    100%{
+        opacity: 0.1;
+    }
+}
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  
+  .fade-in {
+    margin-left: -100px;
+    font-size: 50px;
+    margin-top:100px;
+    text-align: center;
+    animation: fadeIn 3s ease-in-out infinite;
+  }
+
+  @keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
+  }
+  
+  @keyframes blinkCaret {
+    from, to { border-color: transparent; }
+    50% { border-color: black; }
+  }
+  
+  .typing {
+    display: inline-block;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid black;
+    font-size: 1.2em;
+    animation: typing 8s steps(40, end), blinkCaret .75s step-end infinite;
+    max-width: 100%;
+  }
+  
+  .typing::after {
+    content: "";
+    display: inline-block;
+    animation: blinkCaret 1s step-end infinite;
+  }

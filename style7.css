@@ -1,0 +1,100 @@
+body {
+	font-family: Arial, sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
+header {
+	background-color: #333;
+	color: #fff;
+	padding: 1em;
+	text-align: center;
+}
+
+nav ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	justify-content: space-between;
+}
+
+nav li {
+	margin-right: 20px;
+}
+
+nav a {
+	color: #fff;
+	text-decoration: none;
+}
+
+main {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 2em;
+}
+
+.counselling-session {
+	background-color: #f7f7f7;
+	padding: 2em;
+	border: 1px solid #ddd;
+	border-radius: 10px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.therapist-info {
+	display: flex;
+	align-items: center;
+	margin-bottom: 20px;
+}
+
+.therapist-info img {
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	margin-right: 10px;
+}
+
+.session-chat {
+	margin-top: 20px;
+}
+
+#chat-input {
+	width: 100%;
+	padding: 10px;
+	font-size: 16px;
+	border: 1px solid #ccc;
+	border-radius: 10px;
+}
+
+#send-btn {
+	background-color: #4CAF50;
+	color: #fff;
+	padding: 10px 20px;
+	border: none;
+	border-radius: 10px;
+	cursor: pointer;
+}
+
+#send-btn:hover {
+	background-color: #3e8e41;
+}
+
+.chat-log {
+	padding: 20px;
+	border: 1px solid #ddd;
+	border-radius: 10px;
+}
+
+.chat-log p {
+	margin-bottom: 10px;
+}
+
+footer {
+	background-color:#45a049 ;
+	color: #fff;
+	padding: 1em;
+	text-align: center;
+	clear: both;
+}

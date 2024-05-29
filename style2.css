@@ -1,0 +1,52 @@
+/* styles.css */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+.user-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 20px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.user-card h2 {
+    margin-top: 0;
+    color: #333;
+}
+
+.user-card p {
+    color: #777;
+}
+
+.links {
+    margin-top: 10px;
+}
+
+.links a {
+    margin-right: 10px;
+    text-decoration: none;
+}
+
+.links img {
+    width: 24px;
+    height: 24px;
+    vertical-align: middle;
+}

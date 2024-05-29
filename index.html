@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Let's Talk</title>
+    <link rel="stylesheet" href="styles.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+    <header>
+        <div class="social">
+           <img class="id" src="static/logo.png" alt=""/>
+        </div>
+        <a href="" class="text_logo">Let's Talk</a>
+        <ul class="navigation">
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="services.html">SERVICES</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+        </ul>
+        <button class="toggle_btn"><i class="fas fa-bars"></i></button>
+    </header>
+ 
+    <main>
+       <article>
+        <img src="static/mental-health_1004272-282-removebg-preview (1).png" alt=""/>
+        <div class="show-box">
+            <h2 class="show_title">Mental Health Tracker</h2>
+            <p class="typing">Mental health means keeping our minds healthy.<br>
+                Mankind generally is more focused on keeping their physical body healthy.<br>
+                People tend to ignore the state of their minds.<br>
+                Human superiority over other animals lies in his superior mind.<br>
+                Man has been able to control life due to his highly developed brain.</p>
+            <div class="actions">
+                <a href="contact.html" class="contact">CONTACT</a>
+                <a href="https://www.verywellmind.com/tips-to-reduce-stress-3145195" class="read_more">READ MORE</a>
+            </div>
+            <h3 class="fade-in">Self care is self Love</h3>
+        </div>
+        <img src="static/2-removebg-preview.png" alt=""/>
+    </article>
+    </main>
+    
+    <script>
+        const btn = document.querySelector('.toggle_btn')
+        btn.addEventListener('click',() => document.querySelector('.navigation').classList.toString)
+        </script>
+   </body>
+</html>
